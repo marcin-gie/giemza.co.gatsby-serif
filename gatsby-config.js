@@ -28,12 +28,13 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-sass',
     'gatsby-transformer-json',
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-source-filesystem',s
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
